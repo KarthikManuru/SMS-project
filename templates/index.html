@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send SMS</title>
+</head>
+<body>
+    <h2>Send OTP via SMS</h2>
+    <form id="smsForm">
+        <label>Phone Number:</label>
+        <input type="text" id="phone" placeholder="Enter phone number" required>
+        <br>
+        <label>Message:</label>
+        <input type="text" id="message" placeholder="Enter message" required>
+        <br>
+        <button type="submit">Send</button>
+    </form>
+
+    <!-- ✅ Correct way to load static JavaScript file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
